@@ -50,3 +50,6 @@ TagManager:
   - name: wall 2
     uniqueID: 3476793947
     locked: 0
+  - name: Decoration
+    uniqueID: 3430925215
+    locked: 0
