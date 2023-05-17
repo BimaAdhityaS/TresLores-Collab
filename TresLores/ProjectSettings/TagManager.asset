@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Follower
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 1932728077
+    locked: 0
+  - name: Gameplay
+    uniqueID: 2840159659
     locked: 0
   - name: wall 2
     uniqueID: 3476793947
