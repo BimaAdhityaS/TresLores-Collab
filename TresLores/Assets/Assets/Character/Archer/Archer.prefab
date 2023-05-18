@@ -11,15 +11,16 @@ GameObject:
   - component: {fileID: 8351964525606526202}
   - component: {fileID: 8351964525606526203}
   - component: {fileID: 8351964525606526200}
-  - component: {fileID: 8351964525606526204}
   - component: {fileID: 8351964525606526205}
+  - component: {fileID: 1148023050}
+  - component: {fileID: 1148023044}
   m_Layer: 0
   m_Name: Archer
-  m_TagString: Untagged
+  m_TagString: Archer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8351964525606526202
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351964525606526198}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.8048545, y: -0.22635823, z: 9.770713}
   m_LocalScale: {x: 1.8, y: 1.7, z: 1}
   m_ConstrainProportionsScale: 0
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -751741401
-  m_SortingLayer: 4
+  m_SortingLayerID: -1454807637
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -563358555, guid: 755580b6d54aab144abd4361eb125355, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,21 +109,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8351964525606526204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8351964525606526198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba13bc665d3c1246befa7850511328e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  walkingSpeed: 3
-  followDistance: 2
 --- !u!95 &8351964525606526205
 Animator:
   serializedVersion: 5
@@ -144,3 +130,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!70 &1148023050
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351964525606526198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014826557, y: -0.015698776}
+  m_Size: {x: 0.12287217, y: 0.25450978}
+  m_Direction: 0
+--- !u!114 &1148023044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351964525606526198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8fd72ea23f8ffe40b22adcf9938a5fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRB: {fileID: 8351964525606526200}
+  speed: 5
+  animator: {fileID: 8351964525606526205}

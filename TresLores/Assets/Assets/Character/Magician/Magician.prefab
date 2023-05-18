@@ -12,10 +12,12 @@ GameObject:
   - component: {fileID: 4676489022351459508}
   - component: {fileID: 4676489022351459507}
   - component: {fileID: 4676489022351459510}
-  - component: {fileID: 4676489022351459511}
+  - component: {fileID: 1489469874}
+  - component: {fileID: 1489469868}
+  - component: {fileID: 1489469875}
   m_Layer: 0
   m_Name: Magician
-  m_TagString: Untagged
+  m_TagString: Magician
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4676489022351459504}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.0248545, y: -0.28635824, z: 9.770713}
   m_LocalScale: {x: 1.8, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
@@ -73,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -751741401
-  m_SortingLayer: 4
+  m_SortingLayerID: -1454807637
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -699171235, guid: 80acfcc3a0145cd42a9341fffb73573d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -129,7 +131,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4676489022351459511
+--- !u!70 &1489469874
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676489022351459504}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0049221185, y: -0.044298768}
+  m_Size: {x: 0.12889577, y: 0.31227672}
+  m_Direction: 0
+--- !u!114 &1489469868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,9 +156,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 4676489022351459504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ba13bc665d3c1246befa7850511328e, type: 3}
+  m_Script: {fileID: 11500000, guid: d8fd72ea23f8ffe40b22adcf9938a5fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  walkingSpeed: 3
-  followDistance: 1
+  myRB: {fileID: 4676489022351459507}
+  speed: 5
+  animator: {fileID: 4676489022351459510}
+--- !u!114 &1489469875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4676489022351459504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8403260e2fe474db66ecefec6c3539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 5608408714997088302, guid: f6abada48bef1c442b92350f57eb3402, type: 3}
+  projectileLifetime: 0.5
