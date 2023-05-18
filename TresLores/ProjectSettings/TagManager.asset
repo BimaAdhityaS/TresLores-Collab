@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Follower
+  - box
+  - Warrior
+  - Archer
+  - Magician
   layers:
   - Default
   - TransparentFX
@@ -48,15 +52,18 @@ TagManager:
   - name: Wall
     uniqueID: 1932728077
     locked: 0
+  - name: Decoration
+    uniqueID: 3430925215
+    locked: 0
   - name: Side-Character
     uniqueID: 3543225895
+    locked: 0
+  - name: pushable
+    uniqueID: 3083641471
     locked: 0
   - name: Gameplay
     uniqueID: 2840159659
     locked: 0
   - name: wall 2
     uniqueID: 3476793947
-    locked: 0
-  - name: Decoration
-    uniqueID: 3430925215
     locked: 0
